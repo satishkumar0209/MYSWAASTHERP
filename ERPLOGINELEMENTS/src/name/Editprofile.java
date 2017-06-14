@@ -16,7 +16,7 @@ public static WebElement Completeprofile1(WebDriver driver)
 }
 public static WebElement Completeprofile(WebDriver driver)
 {
-	return driver.findElement(By.xpath("(.//span[@class='ui-button-text ui-c'])[5]"));
+	return driver.findElement(By.xpath("(.//span[@class='ui-button-text ui-c'])[4]"));
 	
 }
 

@@ -39,10 +39,6 @@ public class Smoke
 	System.out.println("Clicking on Signin button successfully");
 	Thread.sleep(7000);
 	
-	
-	
-	
-	
 	driver.get("https://myswaastherp.sia.co.in/#/home/profile");
 	
 	//Assert.assertEquals(url, "https://myswaastherp.sia.co.in/#/home/profile");
@@ -52,14 +48,9 @@ public class Smoke
 	
 	Editprofile.Completeprofile1(driver).click();
 	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-   
-       FileUtils.copyFile(scrFile, new File("/home/aj/screenshot/Complete profile.png"));
-	
-	
-	
+    FileUtils.copyFile(scrFile, new File("/home/aj/screenshot/Complete profile.png"));
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	
 	Details.Documentsandcertificates(driver).click();
 	File scrFile1 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);   
     FileUtils.copyFile(scrFile1, new File("/home/aj/screenshot/Documents and certificates.png"));
